@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-image: url('../img/background.webp');
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+div#container {
+    border: 3px solid #B45F04;
+    border-radius: 5px;
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    margin: 0 auto;
+    display: flex;
+    height: 120px;
+    align-items: center;
+}
+
+header img {
+    height: 100%;
+    background-color: transparent;
+}
+
+header h1 {
+    font-size: 40px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+div#area-promocao {
+    border-top: 2px solid darkgray;
+    margin: 30px 30px -25px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+div#area-promocao h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+div#area-promocao p {
+    font-weight: bold;
+    font-size: 16px;
+    color: red;
+}
+
+div#area-sorvetes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+div#area-sorvetes section.sorvetes {
+    display: flex;
+    flex-direction: column;
+}
+
+div#area-sorvetes section.sorvetes h2 {
+    margin-bottom: 30px;
+}
+
+div#area-sorvetes section.sorvetes h2::after {
+    content: " ";
+    display: block;
+    height: 3px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+div#area-sorvetes section.sorvetes div.sorvete {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+div#area-sorvetes section.sorvetes div.sorvete:not(:nth-child(2)) {
+    margin-top: 30px;
+}
+
+div#area-sorvetes section.sorvetes div.sorvete section.area-foto-sorvete {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#area-sorvetes section.sorvetes div.sorvete section.area-foto-sorvete img {
+    height: 100%;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+}
+
+div#area-sorvetes section.sorvetes div.sorvete section.infos-sorvete {
+    width: 82%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div#area-sorvetes section.sorvetes div.sorvete section.infos-sorvete div {
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    height: 40%;
+    align-items: center;
+}
+
+div#area-sorvetes section.sorvetes div.sorvete section.infos-sorvete div h3 {
+    font-style: italic;
+}
+
+div#area-sorvetes section.sorvetes div.sorvete section.infos-sorvete div p.desc {
+    color: lightgray;
+}
+
+div#area-sorvetes section.sorvetes div.sorvete section.infos-sorvete div p.valor {
+    color: green;
+}
+
+div#area-sorvetes section.sorvetes div.sorvete section.infos-sorvete div p.qntd {
+    color: blue;
+}
