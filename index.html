@@ -5,86 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/quicksand/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/pacifico/stylesheet.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsividade.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <title>Sorvetes</title>
+    <title>Picolés</title>
 </head>
 
 <body>
     <div id="container">
         <header>
-            <img src="./img/logo.webp" alt="Logo Sorvete">
-            <h1>Sorvetes</h1>
+            <img src="./img/logo.webp" alt="Logo Picolé">
+            <h1>Picolés</h1>
         </header>
         <main>
             <div id="area-promocao">
                 <h3>Promoção!</h3>
                 <p>Leve 5 pague 4</p>
             </div>
-            <div id="area-sorvetes">
-                <section id="cremosos" class="sorvetes">
+            <div id="area-picoles">
+                <section id="cremosos" class="picoles">
                     <h2>Cremosos</h2>
-                    <div class="sorvete">
-                        <section class="area-foto-sorvete">
-                            <img src="./img/picole.jpg" alt="Foto Sorvete de Maracujá">
+                    <div class="picole">
+                        <section class="area-foto-picole">
+                            <img src="./img/picole.jpg" alt="Foto picole de Maracujá">
                         </section>
-                        <section class="infos-sorvete">
+                        <section class="infos-picole">
                             <div>
-                                <h3>Sabor</h3>
-                                <p class="valor">R$ 1,50/uni</p>
+                                <h3>Uva</h3>
+                                <p class="valor">R$ 1,50</p>
                             </div>
                             <div>
-                                <p class="desc">Descrição</p>
-                                <p class="qntd">Quantidade: 5</p>
+                                <p class="desc">Picolé sabor Uva</p>
+                                <p class="qntd">
+                                    <span class="pequeno">Qntd:</span>
+                                    <span class="grande">Quantidade:</span>
+                                    <span>5</span>
+                                </p>
                             </div>
                         </section>
                     </div>
-                    <div class="sorvete">
-                        <section class="area-foto-sorvete">
-                            <img src="./img/picole.jpg" alt="Foto Sorvete de Maracujá">
+                    <div class="picole">
+                        <section class="area-foto-picole">
+                            <img src="./img/picole.jpg" alt="Foto picole de Maracujá">
                         </section>
-                        <section class="infos-sorvete">
+                        <section class="infos-picole">
                             <div>
-                                <h3>Sabor</h3>
-                                <p class="valor">R$ 1,50/uni</p>
+                                <h3 class="sabor">Sabor</h3>
+                                <p class="valor">R$ 1,50</p>
                             </div>
                             <div>
                                 <p class="desc">Descrição</p>
-                                <p class="qntd">Quantidade: 5</p>
+                                <p class="qntd">
+                                    <span class="pequeno">Qntd:</span>
+                                    <span class="grande">Quantidade:</span>
+                                    <span>5</span>
+                                </p>
                             </div>
                         </section>
                     </div>
                 </section>
-                <section id="frutas" class="sorvetes">
+                <section id="frutas" class="picoles">
                     <h2 style="margin-top: 30px;">Frutas</h2>
-                    <div class="sorvete">
-                        <section class="area-foto-sorvete">
-                            <img src="./img/picole.jpg" alt="Foto Sorvete de Maracujá">
+                    <div class="picole">
+                        <section class="area-foto-picole">
+                            <img src="./img/picole.jpg" alt="Foto picole de Maracujá">
                         </section>
-                        <section class="infos-sorvete">
+                        <section class="infos-picole">
                             <div>
                                 <h3>Sabor</h3>
-                                <p class="valor">R$ 1,50/uni</p>
+                                <p class="valor">R$ 1,50</p>
                             </div>
                             <div>
                                 <p class="desc">Descrição</p>
-                                <p class="qntd">Quantidade: 5</p>
+                                <p class="qntd">
+                                    <span class="pequeno">Qntd:</span>
+                                    <span class="grande">Quantidade:</span>
+                                    <span>5</span>
+                                </p>
                             </div>
                         </section>
                     </div>
-                    <div class="sorvete">
-                        <section class="area-foto-sorvete">
-                            <img src="./img/picole.jpg" alt="Foto Sorvete de Maracujá">
+                    <div class="picole">
+                        <section class="area-foto-picole">
+                            <img src="./img/picole.jpg" alt="Foto picole de Maracujá">
                         </section>
-                        <section class="infos-sorvete">
+                        <section class="infos-picole">
                             <div>
                                 <h3>Sabor</h3>
-                                <p class="valor">R$ 1,50/uni</p>
+                                <p class="valor">R$ 1,50</p>
                             </div>
                             <div>
                                 <p class="desc">Descrição</p>
-                                <p class="qntd">Quantidade: 5</p>
+                                <p class="qntd">
+                                    <span class="pequeno">Qntd:</span>
+                                    <span class="grande">Quantidade:</span>
+                                    <span>5</span>
+                                </p>
                             </div>
                         </section>
                     </div>
@@ -92,9 +110,13 @@
             </div>
         </main>
         <footer>
-
+            <h3>
+                Copyright &copy; <span id="anoAtual"></span>
+            </h3>
+            <p>Desenvolvimento por <span class="negrito italico">Derick</span></p>
         </footer>
     </div>
 </body>
 <script src="./js/index.js"></script>
+
 </html>

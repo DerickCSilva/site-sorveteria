@@ -1,3 +1,3 @@
-# site-sorveteria
-Site utilizado pelos clientes ver quais sorvetes tem disponíveis.
+# site-picoleria
+Site utilizado pelos clientes ver quais picoles tem disponíveis.
 

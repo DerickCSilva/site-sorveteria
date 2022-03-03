@@ -13,9 +13,9 @@ body {
 }
 
 div#container {
-    border: 3px solid #B45F04;
+    border: 2px solid #1C1C1C;
     border-radius: 5px;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -36,6 +36,9 @@ header h1 {
     font-size: 40px;
     flex-grow: 1;
     text-align: center;
+    font-family: 'Pacifico', sans-serif;
+    letter-spacing: 7px;
+    font-weight: normal;
 }
 
 main {
@@ -53,35 +56,40 @@ div#area-promocao {
     justify-content: center;
     align-items: center;
     height: 100px;
+    background-color: yellow;
 }
 
 div#area-promocao h3 {
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 20px;
+    background-color: transparent;
 }
 
 div#area-promocao p {
     font-weight: bold;
     font-size: 16px;
     color: red;
+    background-color: transparent;
+    padding-bottom: 20px;
 }
 
-div#area-sorvetes {
+div#area-picoles {
     display: flex;
     flex-direction: column;
     padding: 20px 40px;
 }
 
-div#area-sorvetes section.sorvetes {
+div#area-picoles section.picoles {
     display: flex;
     flex-direction: column;
 }
 
-div#area-sorvetes section.sorvetes h2 {
+div#area-picoles section.picoles h2 {
     margin-bottom: 30px;
+    font-style: italic;
 }
 
-div#area-sorvetes section.sorvetes h2::after {
+div#area-picoles section.picoles h2::after {
     content: " ";
     display: block;
     height: 3px;
@@ -89,7 +97,7 @@ div#area-sorvetes section.sorvetes h2::after {
     border-radius: 10px;
 }
 
-div#area-sorvetes section.sorvetes div.sorvete {
+div#area-picoles section.picoles div.picole {
     display: flex;
     justify-content: space-between;
     height: 100px;
@@ -97,50 +105,76 @@ div#area-sorvetes section.sorvetes div.sorvete {
     padding-bottom: 20px;
 }
 
-div#area-sorvetes section.sorvetes div.sorvete:not(:nth-child(2)) {
+div#area-picoles section.picoles div.picole:not(:nth-child(2)) {
     margin-top: 30px;
 }
 
-div#area-sorvetes section.sorvetes div.sorvete section.area-foto-sorvete {
+div#area-picoles section.picoles div.picole section.area-foto-picole {
     width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div#area-sorvetes section.sorvetes div.sorvete section.area-foto-sorvete img {
+div#area-picoles section.picoles div.picole section.area-foto-picole img {
     height: 100%;
     border: 1px solid darkgray;
     border-radius: 4px;
 }
 
-div#area-sorvetes section.sorvetes div.sorvete section.infos-sorvete {
+div#area-picoles section.picoles div.picole section.infos-picole {
     width: 82%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-div#area-sorvetes section.sorvetes div.sorvete section.infos-sorvete div {
+div#area-picoles section.picoles div.picole section.infos-picole div {
     display: flex;
-    /* border: 1px solid red; */
     justify-content: space-between;
     height: 40%;
     align-items: center;
 }
 
-div#area-sorvetes section.sorvetes div.sorvete section.infos-sorvete div h3 {
+div#area-picoles section.picoles div.picole section.infos-picole div h3 {
     font-style: italic;
 }
 
-div#area-sorvetes section.sorvetes div.sorvete section.infos-sorvete div p.desc {
+div#area-picoles section.picoles div.picole section.infos-picole div p.desc {
     color: lightgray;
 }
 
-div#area-sorvetes section.sorvetes div.sorvete section.infos-sorvete div p.valor {
+div#area-picoles section.picoles div.picole section.infos-picole div p.valor {
     color: green;
 }
 
-div#area-sorvetes section.sorvetes div.sorvete section.infos-sorvete div p.qntd {
+div#area-picoles section.picoles div.picole section.infos-picole div p.qntd {
     color: blue;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #D8D8D8;
+}
+
+footer h3,
+footer p,
+footer span {
+    background-color: transparent;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.italico {
+    font-style: italic;
 }

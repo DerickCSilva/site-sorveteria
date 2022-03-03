@@ -1,0 +1,67 @@
+/* Formatações de responsividade na página index.html */
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+        height: 150px;
+    }
+
+    header img {
+        height: 80%;
+    }
+
+    div#area-promocao {
+        width: 95%;
+        margin: 30px auto 0;
+    }
+
+    div#area-promocao p {
+        padding-bottom: 0;        
+    }
+
+    div#area-picoles {
+        padding: 10px 20px;
+    }
+
+    div#area-picoles section.picoles div.picole section.infos-picole span.grande {
+        display: none;
+    }
+
+    div#area-picoles section.picoles div.picole section.infos-picole h3.sabor {
+        font-size: 16px;
+    }
+
+    div#area-picoles section.picoles div.picole section.infos-picole div p.desc {
+        max-width: 60%;
+        word-wrap: break-word;
+    }
+
+    div#area-picoles section.picoles div.picole section.infos-picole {
+        font-size: 14px;
+    }
+
+    div#area-picoles section.picoles div.picole section.area-foto-picole {
+        width: 36%;
+    }
+
+    div#area-picoles section.picoles div.picole section.infos-picole {
+        width: 60%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    div#area-picoles section.picoles div.picole section.infos-picole span.pequeno {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    div#area-picoles section.picoles div.picole section.infos-picole span.pequeno {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    div#area-picoles section.picoles div.picole section.infos-picole span.pequeno {
+        display: none;
+    }
+}
